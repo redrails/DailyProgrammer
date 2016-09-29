@@ -7,7 +7,7 @@ namespace swipe
 {
     class Program
     {
-        static string path = "C:\\Users\\ihtasham.chaudhry\\Documents\\Visual Studio 2015\\Projects\\swipe\\swipe\\words.txt";
+        static string path = "C:\\Users\\redrails\\Documents\\Visual Studio 2015\\Projects\\swipe\\swipe\\words.txt";
         static void Main(string[] args)
         {
             string[] input = { "cghhjkkllooiuytrrdfdftgyuiuytrfdsaazzseertyuioppoiuhgfcxxcfvghujiiuytrfddeews" };
