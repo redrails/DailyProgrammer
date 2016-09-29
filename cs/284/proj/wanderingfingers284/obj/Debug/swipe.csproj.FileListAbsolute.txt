@@ -1,0 +1,6 @@
+c:\users\ihtasham.chaudhry\documents\visual studio 2015\Projects\swipe\swipe\obj\Debug\swipe.csprojResolveAssemblyReference.cache
+c:\users\ihtasham.chaudhry\documents\visual studio 2015\Projects\swipe\swipe\bin\Debug\swipe.exe.config
+c:\users\ihtasham.chaudhry\documents\visual studio 2015\Projects\swipe\swipe\bin\Debug\swipe.exe
+c:\users\ihtasham.chaudhry\documents\visual studio 2015\Projects\swipe\swipe\bin\Debug\swipe.pdb
+c:\users\ihtasham.chaudhry\documents\visual studio 2015\Projects\swipe\swipe\obj\Debug\swipe.exe
+c:\users\ihtasham.chaudhry\documents\visual studio 2015\Projects\swipe\swipe\obj\Debug\swipe.pdb
