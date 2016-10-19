@@ -38,8 +38,7 @@ int backToInt(const vector<int>& numbers){
     return result;
 }
 
-int desc_digits(int n){
-
+vector<int> getNumberAsVector(int n){
     vector<int> numbers{};
     for(int i=0; i<4; i++){
         numbers.push_back(n%10);
@@ -52,9 +51,31 @@ int desc_digits(int n){
             numbers.insert(numbers.begin(), 0);
         }
     }
-    sort(numbers.begin(),numbers.end());
-    return backToInt(numbers);
+    return numbers;
+}
 
+int desc_digits(int n){
+
+    vector<int> nums = getNumberAsVector(n);
+    sort(nums.begin(),nums.end());
+    return backToInt(nums);
+
+}
+
+int asc_digits(int n){
+
+    vector<int> nums = getNumberAsVector(n);
+    sort(nums.begin(),nums.end(), greater<int>());
+    return backToInt(nums);
+
+}
+
+int kaprekar(int iter, int number){
+    if(number == 6174){
+        return iter;
+    } else {
+        return kaprekar(++iter, desc_digits(number) - asc_digits(number));
+    }
 }
 
 int main(){
@@ -66,10 +87,17 @@ int main(){
     cout << largest_digit(0, 120) << "\n";
 
     cout << "======================\n";
+
     cout << desc_digits(1234) << "\n";
     cout << desc_digits(3253) << "\n";
     cout << desc_digits(9800) << "\n";
     cout << desc_digits(3333) << "\n";
     cout << desc_digits(120) << "\n";
+
+    cout << "======================\n";
+
+    cout << kaprekar(0, 6589) << "\n";
+    cout << kaprekar(0, 5455) << "\n";
+    cout << kaprekar(0, 6174) << "\n";
 
 }
