@@ -70,7 +70,26 @@ int asc_digits(int n){
 
 }
 
+bool twoUnique(int n){
+
+    vector<int> numbers = getNumberAsVector(n);
+
+    for(int i=1; i<4; i++){
+        if(numbers[i] != numbers[0]){
+            return true;
+        }
+    }
+
+    return false;
+
+}
+
 int kaprekar(int iter, int number){
+
+    if(!twoUnique(number)){
+        return 0;
+    }
+
     if(number == 6174){
         return iter;
     } else {
